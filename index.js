@@ -29,12 +29,18 @@ const pattern =
 // Get result from Form Submit
 const updateUI = (result) => {
   // Redirect User to the container if URL is valid
-  if (result) {
-    const navigate = document.createElement("a");
-    navigate.href = "#container";
-    navigate.click();
-    navigate.remove();
+  const redirect = () => {
+    if (result) {
+      const navigate = document.createElement("a");
+      navigate.href = "#container";
+      navigate.click();
+      navigate.remove();
+    }
   }
+
+  setTimeout(() => {
+    redirect();
+  }, 300);
 
   // Getting Full URL
   const cors = "https://api.codetabs.com/v1/proxy?quest=";
