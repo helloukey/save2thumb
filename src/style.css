@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #909090;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+  text-align: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.links {
+  @apply text-slate-800 text-lg font-bold mx-2 border-b-2
+  border-slate-700 hover:border-b-4
+  hover:border-black xl:text-2xl xl:mx-5;
+}
+
+.search-styles {
+  @apply w-3/4 h-10 rounded bg-slate-200 px-2 xl:h-16
+    focus:outline-none placeholder:text-slate-500;
+}
+
+.search-btn-styles {
+  @apply w-3/4 h-10 bg-slate-500 rounded mt-5
+    text-white font-semibold xl:h-16
+    hover:bg-slate-600;
+}
+
+.container-styles {
+  @apply min-h-screen bg-slate-50 flex-col
+    justify-center items-center text-center m-auto;
+}
+
+.download-btn {
+  @apply bg-red-500 px-5 py-3 m-2 rounded
+  text-white font-semibold hover:bg-red-600;
+}
+
+.home-btn {
+  @apply w-2/4 block mx-auto bg-slate-600
+    px-5 py-3 m-2 rounded text-white font-semibold
+    hover:bg-slate-700;
+}
+
+.tutorial-styles {
+  @apply bg-slate-400 text-white min-h-screen
+    flex flex-col items-center lg:flex-row lg:justify-center lg:gap-5;
+}
+
+.steps-container {
+  @apply px-4 py-8 max-w-md w-full max-h-max;
+}
+
+.step-link {
+  @apply font-bold border-b-2 border-slate-600 hover:border-b-4 hover:border-slate-700
+}
+
+.step {
+  @apply mb-4 lg:mb-10;
+}
+
+.step-text {
+  @apply font-bold mb-2 lg:text-2xl;
+}
+
+.step-subtext {
+  @apply ml-2 text-sm lg:text-xl;
+}
+
+.footer-container {
+  @apply min-h-screen bg-slate-50 flex flex-col
+    items-center text-center m-auto lg:flex-row lg:justify-center lg:gap-10;
+}
+
+.name-styles {
+  @apply p-1 border-b-4 border-purple-600
+    hover:border-b-8 hover:font-bold;
+}
+
+.email-styles {
+  @apply p-1 border-b-2 border-slate-800
+    hover:border-b-4 hover:font-bold;
+}
+
+.footer-text {
+  @apply text-3xl font-semibold mb-4 lg:text-6xl lg:mb-10;
+}
+
+.footer-subtext {
+  @apply text-xl font-semibold text-slate-800 lg:text-3xl;
+}

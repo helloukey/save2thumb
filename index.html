@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <title>YouTube Thumbnail Downloader</title>
+  </head>
+  <body>
+
+    <!-- Wrapper starts here -->
+    <div class="wrapper min-h-screen">
+
+      <!-- Header starts here -->
+      <header class="min-h-screen bg-slate-50" id="home">
+        <nav>
+          <div
+            class="logo-container flex items-center justify-center gap-2 pt-5 mr-2"
+          >
+            <a href="index.html"
+              ><img src="./img/logo.svg" alt="logo" class="logo w-24 xl:w-36"
+            /></a>
+            <h1 class="text-4xl xl:text-6xl">Save2Thumb</h1>
+          </div>
+          <div class="links-container mt-10 xl:mt-16">
+            <ul class="flex justify-center">
+              <li><a href="index.html" class="links">Home</a></li>
+              <li><a href="#tutorial" class="links">Guide</a></li>
+              <li><a href="#footer" class="links">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <form class="mt-40 text-center">
+          <input
+            type="search"
+            id="search"
+            placeholder="Enter the video URL here..."
+            autocomplete="off"
+            class="search-styles"
+          />
+          <button class="search search-btn-styles">Search</button>
+        </form>
+      </header>
+      <!-- Header ends here -->
+
+      <!-- Container starts here -->
+      <div class="container container-styles" id="container">
+        <div class="thumbnail-preview mx-2 pt-20 mb-5">
+          <img
+            src="https://dummyimage.com/600x400/ffffff/545454.jpg&text=Thumbnail+Preview"
+            alt="thumbnail-preview"
+            class="preview w-96 mx-auto shadow-lg xl:w-2/4"
+          />
+        </div>
+
+        <!-- Loader Animation -->
+        <div class="loader-container pt-10">
+          <div class="loader hidden"></div>
+        </div>
+
+        <div class="download-options hidden">
+          <p class="m-5 font-semibold">Download Quality:</p>
+          <button class="small download-btn">Small</button>
+          <button class="medium download-btn">Medium</button>
+          <button class="large download-btn">Large</button>
+          <button class="home home-btn">Home</button>
+        </div>
+      </div>
+      <!-- Container ends here -->
+
+      <!-- Tutorial starts here -->
+      <div class="tutorial tutorial-styles" id="tutorial">
+        <div class="steps-container">
+          <div class="step1 step">
+            <p class="step-text">• STEP 1</p>
+            <p class="step-subtext">
+              Goto <a href="https://youtube.com" target="_blank" class="step-link">
+              YouTube.com</a>, Search for the video and then copy the video URL.
+            </p>
+          </div>
+          <div class="step2 step">
+            <p class="step-text">• STEP 2</p>
+            <p class="step-subtext">
+              Paste the URL here, which you have earlier copied, and click
+              Submit.
+            </p>
+          </div>
+          <div class="step3 step">
+            <p class="step-text">• STEP 3</p>
+            <p class="step-subtext">
+              Choose the Thumbnail Quality to Download. (You can download thumbnail in Low, Medium, and High-Quality)
+            </p>
+          </div>
+          <div class="step4">
+            <p class="step-text">• STEP 4</p>
+            <p class="step-subtext">
+              Confirm the Download if prompted by the browser. That's it!
+            </p>
+          </div>
+        </div>
+        <div class="steps-image-container mx-5">
+          <img
+            src="./img/steps-guide.svg"
+            alt="Steps Preview"
+            class="shadow-lg text-center mx-auto"
+          />
+        </div>
+      </div>
+      <!-- Tutorial ends here -->
+
+      <!-- Footer starts here -->
+      <footer class="footer-container" id="footer">
+        <div class="blob-container m-4">
+          <img
+            src="./img/my-contact.png"
+            alt="my-contact"
+            class="mt-10 max-w-2xl w-full"
+          />
+        </div>
+        <div class="contact-details mt-5 mx-1">
+          <p class="footer-text">
+            Hi, I'm
+            <a href="https://github.com/helloukey" class="name-styles">Kunal</a>
+            😊
+          </p>
+          <p class="footer-subtext mb-1">
+            A passionate guy into web development!
+          </p>
+          <p class="footer-subtext">
+            You can reach me at
+            <a href="mailto:kunalukey32@gmail.com" class="email-styles"
+              >kunalukey32@gmail.com</a
+            >
+          </p>
+        </div>
+      </footer>
+      <!-- Footer ends here -->
+
+    </div>
+    <!-- Wrapper ends here -->
+
+    <!-- Script -->
+    <script src="index.js"></script>
+  </body>
+</html>
