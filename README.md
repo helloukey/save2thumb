@@ -16,7 +16,7 @@ A simple YouTube Thumbnail Downloader Tool made using HTML, CSS, Tailwind CSS, a
 
 - Simple & Clean UI
 - Lightweight
-- Mulitple Download Options
+- Multiple Download Options
 - Mobile Responsive
 ## Installation
 
