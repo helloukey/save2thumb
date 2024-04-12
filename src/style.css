@@ -65,7 +65,7 @@
 }
 
 .step-link {
-  @apply font-bold border-b-2 border-slate-600 hover:border-b-4 hover:border-slate-700
+  @apply font-bold border-b-2 border-slate-600 hover:border-b-4 hover:border-slate-700;
 }
 
 .step {

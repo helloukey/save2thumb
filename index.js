@@ -36,7 +36,7 @@ const updateUI = (result) => {
       navigate.click();
       navigate.remove();
     }
-  }
+  };
 
   setTimeout(() => {
     redirect();
